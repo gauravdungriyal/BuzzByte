@@ -89,7 +89,7 @@ def writeblog(request):
             title = form.cleaned_data['title']
             description = form.cleaned_data['description']
             content = form.cleaned_data['content']
-            client = genai.Client(api_key="AIzaSyC8kBwuF_s5Z-UfoE0ZvJdpLVjki6pMRFc")
+            client = genai.Client(api_key="YOUR-API-KEY")
 
 # Make a request to the model
             response = client.models.generate_content(
